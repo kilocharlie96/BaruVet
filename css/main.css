@@ -62,11 +62,15 @@ main h2 {
   color: var(--lch-hover);
 }
 
+.tabs {
+  display: flex;
+  justify-content: center;
+}
+
 .member {
   margin: 3rem;
 }
 
-/* TODO */
 .member:not(:first-of-type) {
   border-top: 1px solid var(--lch-light-grey);
 }
@@ -198,10 +202,3 @@ table.office-hours tr td, thead {
     display: none;
   }
 }
-/* 
-@media (min-width: 980px) {
-  #services ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-} */
