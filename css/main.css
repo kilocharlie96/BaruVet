@@ -207,7 +207,7 @@ table.office-hours tr td, thead {
   text-decoration: underline;
 }
 
-@media (min-width: 564px) {
+@media (min-width: 532px) {
   .navigate {
     display: none;
   }
