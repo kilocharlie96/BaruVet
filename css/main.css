@@ -64,7 +64,17 @@ main h2 {
 
 .tabs {
   display: flex;
-  justify-content: center;
+  overflow: scroll;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.tabs li {
+  text-wrap: nowrap;
+}
+
+.tabs button {
+  background-image: linear-gradient( to right, var(--lch-white), var(--lch-light-grey), var(--lch-white));
 }
 
 .member {
