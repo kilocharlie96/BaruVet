@@ -3,10 +3,13 @@
     <button type="button" hx-get="components/services.html" hx-target="#content">Služby</button>
   </li>
   <li>
-    <button type="button" hx-get="components/adress.html" hx-target="#content">Adresa</button>
+    <button type="button" hx-get="components/contact.html" hx-target="#content">Kontakt</button>
   </li>
   <li>
-    <button type="button" hx-get="components/contact.html" hx-target="#content">Kontakt</button>
+    <button type="button" hx-get="components/adress.html" hx-target="#content">Adresa</button>
+  </li>
+    <li>
+    <button type="button" hx-get="components/office-hours.html" hx-target="#content">Ordinačné hodiny</button>
   </li>
   <li>
     <button type="button" hx-get="components/pricelist.html" hx-target="#content">Cenník</button>
@@ -16,5 +19,7 @@
   </li>
 </ul>
 
-<section id="content" hx-get="components/services.html" hx-trigger="load"></section>
+<section>
+  <article id="content" hx-get="components/services.html" hx-trigger="load"></article>
+</section>
 

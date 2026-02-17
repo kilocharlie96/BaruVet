@@ -1,5 +1,5 @@
-<article id="pricelist-vue">
-  <h2>Orientačný cenník</h2>
+<div id="pricelist-vue">
+  <h2 >Orientačný cenník</h2>
   <p><small>Cena pre konkrétneho pacienta je upresnená po vyšetrení.</small></p>
 
   <section class="pricelist-section" v-for="(groups, sectionName) in pricelist" :key="sectionName">
@@ -21,7 +21,7 @@
       </ul>
     </div>
   </section>
-</article>
+</div>
 
 <script>
   const { createApp, ref, onMounted } = Vue;
