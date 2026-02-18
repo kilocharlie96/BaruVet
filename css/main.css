@@ -64,10 +64,12 @@ main h2 {
 
 .tabs {
   display: flex;
+
   overflow: scroll;
   gap: 1rem;
   padding: 1rem;
 }
+
 
 .tabs li {
   text-wrap: nowrap;
@@ -75,6 +77,12 @@ main h2 {
 
 .tabs button {
   background-image: linear-gradient( to right, var(--lch-white), var(--lch-light-grey), var(--lch-white));
+}
+
+.tabs button.selected {
+  background-image: linear-gradient( to right, var(--lch-white), var(--lch-grey), var(--lch-white));
+  font-weight: 500;
+  text-shadow: 0 0.05rem 0.2rem var(--lch-vanilla);
 }
 
 .member {
@@ -210,5 +218,11 @@ table.office-hours tr td, thead {
 @media (min-width: 532px) {
   .navigate {
     display: none;
+  }
+}
+
+@media (min-width: 524px) {
+  .tabs {
+    justify-content: center;
   }
 }
