@@ -80,9 +80,10 @@ main h2 {
 }
 
 .tabs button.selected {
-  background-image: linear-gradient( to right, var(--lch-white), var(--lch-grey), var(--lch-white));
+  background-image: linear-gradient( to right, var(--lch-white), var(--lch-transparent-grey), var(--lch-white));
   font-weight: 500;
   text-shadow: 0 0.05rem 0.2rem var(--lch-vanilla);
+  text-decoration: underline;
 }
 
 .member {
