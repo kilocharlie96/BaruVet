@@ -1,25 +1,24 @@
-<!-- <li>
-  <button class="tab" type="button" hx-get="components/services.html" hx-target="#content">Služby</button>
-</li> -->
-
 <ul class="tabs">
   <li>
-    <button class="tab selected" type="button" hx-get="components/adress.html" hx-target="#content" onclick="toggleSelected(this)">Adresa</button>
+    <button class="btn tab selected" type="button" hx-get="components/services.html" hx-target="#content" onclick="toggleSelected(this)">Služby</button>
   </li>
   <li>
-    <button class="tab" type="button" hx-get="components/contact.html" hx-target="#content" onclick="toggleSelected(this)">Kontakt</button>
+    <button class="btn tab" type="button" hx-get="components/adress.html" hx-target="#content" onclick="toggleSelected(this)">Adresa</button>
   </li>
   <li>
-    <button class="tab" type="button" hx-get="components/office-hours.html" hx-target="#content" onclick="toggleSelected(this)">Ordinačné hodiny</button>
+    <button class="btn tab" type="button" hx-get="components/contact.html" hx-target="#content" onclick="toggleSelected(this)">Kontakt</button>
   </li>
   <li>
-    <button class="tab" type="button" hx-get="components/pricelist.html" hx-target="#content" onclick="toggleSelected(this)">Cenník</button>
+    <button class="btn tab" type="button" hx-get="components/office-hours.html" hx-target="#content" onclick="toggleSelected(this)">Ordinačné hodiny</button>
   </li>
   <li>
-    <button class="tab" type="button" hx-get="components/team.html" hx-target="#content" onclick="toggleSelected(this)">Tím</button>
+    <button class="btn tab" type="button" hx-get="components/pricelist.html" hx-target="#content" onclick="toggleSelected(this)">Cenník</button>
+  </li>
+  <li>
+    <button class="btn tab" type="button" hx-get="components/team.html" hx-target="#content" onclick="toggleSelected(this)">Tím</button>
   </li>
 </ul>
 
 <section>
-  <article id="content" hx-get="components/adress.html" hx-trigger="load"></article>
+  <article id="content" hx-get="components/services.html" hx-trigger="load"></article>
 </section>

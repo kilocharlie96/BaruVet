@@ -20,7 +20,15 @@ body {
 
 button {
     border: none;
+}
+
+.btn {
+    background: var(--lch-brand-red);
     padding: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: 0.1rem 0.1rem 0.5rem var(--lch-light-grey);
+    font-size: 0.8rem;
+    color: var(--lch-white);
 }
 
 button:hover, button:active {
