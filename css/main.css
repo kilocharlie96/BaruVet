@@ -13,7 +13,7 @@ main article {
 
 .tabs {
   display: flex;
-  background: var(--lch-light-grey);
+  /* background: var(--lch-light-grey); */
   overflow: auto;
   gap: 0.5rem;
   margin-top: 5%;
