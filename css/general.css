@@ -22,6 +22,15 @@ button {
     border: none;
 }
 
+.btn {
+    background: var(--lch-brand-red);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: 0.1rem 0.1rem 0.5rem var(--lch-light-grey);
+    font-size: 0.8rem;
+    color: var(--lch-white);
+}
+
 button:hover, button:active {
     cursor: pointer;
 }
@@ -71,11 +80,7 @@ ul {
     padding: 0;
 }
 
-article {
-    margin-top: 3rem;
-    border-top: 1px solid var(--lch-light-grey);
-}
-
 figure {
-    margin: 1.5rem 0;
+    margin: 0;
+    padding: 2rem 1rem;
 }

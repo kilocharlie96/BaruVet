@@ -1,6 +1,32 @@
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px) rotate(-1deg); }
+  50% { transform: translateX(5px) rotate(1deg); }
+  75% { transform: translateX(-5px) rotate(-1deg); }
+  100% { transform: translateX(0); }
+}
+
 main article { 
   max-width: 660px;
   margin: 2.5rem auto;
+}
+
+.tabs {
+  display: flex;
+  /* background: var(--lch-light-grey); */
+  overflow: auto;
+  gap: 0.5rem;
+  margin-top: 5%;
+  padding: 0.2rem 0.2rem 0.2rem 0.5rem;
+}
+
+.tabs li {
+  text-wrap: nowrap;
+}
+
+.tabs button.selected {
+  font-weight: 600;
+  text-decoration: underline;
 }
 
 #services {
@@ -29,6 +55,11 @@ main h2 {
     );
 
     border-radius: 0.75rem;
+}
+
+.services-item:hover, .services-item:active {
+    animation: shake 0.5s ease-in-out;
+    animation-iteration-count: 1;
 }
 
 .services-item a {
@@ -66,7 +97,6 @@ main h2 {
   margin: 3rem;
 }
 
-/* TODO */
 .member:not(:first-of-type) {
   border-top: 1px solid var(--lch-light-grey);
 }
@@ -125,33 +155,25 @@ ol {
   margin-top: 0.45rem;
 }
 
-.town {
-  margin-bottom: 2.5rem;
+.adress {
+  margin-bottom: 2rem;
 }
 
-a.navigate {
-  background: var(--lch-brand-red);
-  padding: 0.75rem;
-
-  border-radius: 1.5rem;
-  box-shadow: 0.1rem 0.1rem 0.5rem black;
-  
-  font-size: 0.8rem;
-  color: var(--lch-white);
+.adress p {
+  font-weight: 500;
 }
 
-a.navigate:hover, a.navigate:active {
+.btn.navigate {
   padding: 0.7rem;
 }
+
+/* .btn.navigate:hover, .btn.navigate:active {
+  
+} */
 
 iframe {
   width: 100%;
   height: clamp(15rem, 80vw, 30rem);
-}
-
-#adress p {
-  font-family: "Montseratt", sans-serif;
-  font-weight: bold;
 }
 
 .office-hours {
@@ -193,15 +215,14 @@ table.office-hours tr td, thead {
   text-decoration: underline;
 }
 
-@media (min-width: 564px) {
-  .navigate {
+@media (min-width: 532px) {
+  .btn.navigate {
     display: none;
   }
 }
-/* 
-@media (min-width: 980px) {
-  #services ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+
+@media (min-width: 524px) {
+  .tabs {
+    justify-content: center;
   }
-} */
+}
