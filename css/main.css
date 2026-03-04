@@ -155,16 +155,16 @@ ol {
   margin-top: 0.45rem;
 }
 
-.adress {
+#adress {
   margin-bottom: 2rem;
 }
 
-.adress p {
+#adress p {
   font-weight: 500;
 }
 
-.btn.navigate {
-  padding: 0.7rem;
+.navigate:hover, .navigate:active {
+  text-decoration: underline;
 }
 
 /* .btn.navigate:hover, .btn.navigate:active {
@@ -172,7 +172,7 @@ ol {
 } */
 
 iframe {
-  width: 100%;
+  width: 90%;
   height: clamp(15rem, 80vw, 30rem);
 }
 
@@ -215,14 +215,8 @@ table.office-hours tr td, thead {
   text-decoration: underline;
 }
 
-@media (min-width: 532px) {
-  .btn.navigate {
+@media (min-width: 555px) {
+  .navigate {
     display: none;
-  }
-}
-
-@media (min-width: 524px) {
-  .tabs {
-    justify-content: center;
   }
 }
