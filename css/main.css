@@ -72,6 +72,7 @@ main h2 {
   padding-left: 2rem;
 
   font-size: 1rem;
+  text-decoration: none;
 }
 
 .services-item img {
@@ -167,12 +168,8 @@ ol {
   text-decoration: underline;
 }
 
-/* .btn.navigate:hover, .btn.navigate:active {
-  
-} */
-
 iframe {
-  width: 90%;
+  width: 95%;
   height: clamp(15rem, 80vw, 30rem);
 }
 
@@ -215,7 +212,7 @@ table.office-hours tr td, thead {
   text-decoration: underline;
 }
 
-@media (min-width: 555px) {
+@media (min-width: 558px) {
   .navigate {
     display: none;
   }
