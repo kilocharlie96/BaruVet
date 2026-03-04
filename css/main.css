@@ -11,26 +11,7 @@ main article {
   margin: 2.5rem auto;
 }
 
-.tabs {
-  display: flex;
-  /* background: var(--lch-light-grey); */
-  overflow: auto;
-  gap: 0.5rem;
-  margin-top: 5%;
-  padding: 0.2rem 0.2rem 0.2rem 0.5rem;
-}
-
-.tabs li {
-  text-wrap: nowrap;
-}
-
-.tabs button.selected {
-  font-weight: 600;
-  text-decoration: underline;
-}
-
 #services {
-  border-top: none;
   padding: 0 2rem;
   max-width: 520px;
 }
@@ -98,10 +79,6 @@ main h2 {
   margin: 3rem;
 }
 
-.member:not(:first-of-type) {
-  border-top: 1px solid var(--lch-light-grey);
-}
-
 .member h3 {
   font-weight: 750;
 }
@@ -154,6 +131,10 @@ ol {
   font-size: 80%;
 
   margin-top: 0.45rem;
+}
+
+#team hr {
+  width: 80%;
 }
 
 #adress {
