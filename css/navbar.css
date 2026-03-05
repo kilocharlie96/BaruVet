@@ -13,6 +13,7 @@
 }
 
 .navbar a{
+    text-decoration: none;
     font-weight: 500;
     color: var(--lch-white);
     font-size: clamp(0.8rem, 0.9vw, 2rem);
