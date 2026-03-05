@@ -125,46 +125,6 @@ ol {
   width: 80%;
 }
 
-#adress p {
-  font-weight: 500;
-}
-
-a.navigate {
-  display: grid;
-  place-content: center;
-  grid-template-columns: 1fr 3fr;
-
-  width: fit-content;
-  margin: auto;
-  padding: 0.6rem;
-  border-radius: 1rem;
-
-  background: var(--lch-brand-red);
-  text-decoration: none;
-  color: var(--lch-white);
-}
-
-.pin-svg {
-  width:22px;
-  height:22px;
-  fill:var(--lch-white);
-  transform: scale(1.2);
-}
-
-.navigate span {
-  margin: auto;
-}
-/* 
-a.navigate:hover, a.navigate:active {
-
-} */
-
-iframe {
-  width: 95%;
-  height: clamp(15rem, 80vw, 30rem);
-}
-
-
 .office-hours {
   width: 95%;
   border-collapse: collapse;
@@ -194,15 +154,43 @@ iframe {
   text-align-last: left;
 }
 
-
 table.office-hours tr td, thead {
   border-bottom: 1px solid #444;
 }
 
-@media (min-width: 564px) {
-  .navigate {
-    display: none;
-  }
+#adress p {
+  font-weight: 500;
+}
+
+.navigate {
+  display: grid;
+  place-content: center;
+  grid-template-columns: 1fr 3fr;
+
+  width: fit-content;
+  margin: auto;
+  padding: 0.6rem;
+  border-radius: 1rem;
+  
+  background: var(--lch-brand-red);
+  text-decoration: none;
+  color: var(--lch-white);
+}
+
+.pin-svg {
+  width:22px;
+  height:22px;
+  fill:var(--lch-white);
+  transform: scale(1.2);
+}
+
+.navigate span {
+  margin: auto;
+}
+
+iframe {
+  width: 95%;
+  height: clamp(15rem, 80vw, 30rem);
 }
 
 #contact a {
@@ -211,10 +199,8 @@ table.office-hours tr td, thead {
   padding: 0.25rem;
 }
 
-/* 
-@media (min-width: 980px) {
-  #services ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+@media (min-width: 526px) {
+  .navigate {
+    display: none;
   }
-} */
+}
