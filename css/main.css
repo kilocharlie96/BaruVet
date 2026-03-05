@@ -125,8 +125,8 @@ ol {
   margin-top: 0.45rem;
 }
 
-.town {
-  margin-bottom: 2.5rem;
+#adress p {
+  font-weight: 500;
 }
 
 a.navigate {
@@ -145,14 +145,10 @@ a.navigate:hover, a.navigate:active {
 }
 
 iframe {
-  width: 100%;
+  width: 95%;
   height: clamp(15rem, 80vw, 30rem);
 }
 
-#adress p {
-  font-family: "Montseratt", sans-serif;
-  font-weight: bold;
-}
 
 .office-hours {
   width: 95%;
