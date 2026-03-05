@@ -1,17 +1,10 @@
-@keyframes shake {
-  0% { transform: translateX(0); }
-  25% { transform: translateX(-5px) rotate(-1deg); }
-  50% { transform: translateX(5px) rotate(1deg); }
-  75% { transform: translateX(-5px) rotate(-1deg); }
-  100% { transform: translateX(0); }
-}
-
 main article { 
   max-width: 660px;
   margin: 2.5rem auto;
 }
 
 #services {
+  border-top: none;
   padding: 0 2rem;
   max-width: 520px;
 }
@@ -38,11 +31,6 @@ main h2 {
     border-radius: 0.75rem;
 }
 
-.services-item:hover, .services-item:active {
-    animation: shake 0.5s ease-in-out;
-    animation-iteration-count: 1;
-}
-
 .services-item a {
   display: flex;
   align-items: center;
@@ -53,7 +41,6 @@ main h2 {
   padding-left: 2rem;
 
   font-size: 1rem;
-  text-decoration: none;
 }
 
 .services-item img {
@@ -77,6 +64,11 @@ main h2 {
 
 .member {
   margin: 3rem;
+}
+
+/* TODO */
+.member:not(:first-of-type) {
+  border-top: 1px solid var(--lch-light-grey);
 }
 
 .member h3 {
@@ -133,25 +125,33 @@ ol {
   margin-top: 0.45rem;
 }
 
-#team hr {
-  width: 80%;
+.town {
+  margin-bottom: 2.5rem;
 }
 
-#adress {
-  margin-bottom: 2rem;
+a.navigate {
+  background: var(--lch-brand-red);
+  padding: 0.75rem;
+
+  border-radius: 1.5rem;
+  box-shadow: 0.1rem 0.1rem 0.5rem black;
+  
+  font-size: 0.8rem;
+  color: var(--lch-white);
 }
 
-#adress p {
-  font-weight: 500;
-}
-
-.navigate:hover, .navigate:active {
-  text-decoration: underline;
+a.navigate:hover, a.navigate:active {
+  padding: 0.7rem;
 }
 
 iframe {
-  width: 95%;
+  width: 100%;
   height: clamp(15rem, 80vw, 30rem);
+}
+
+#adress p {
+  font-family: "Montseratt", sans-serif;
+  font-weight: bold;
 }
 
 .office-hours {
@@ -193,8 +193,15 @@ table.office-hours tr td, thead {
   text-decoration: underline;
 }
 
-@media (min-width: 558px) {
+@media (min-width: 564px) {
   .navigate {
     display: none;
   }
 }
+/* 
+@media (min-width: 980px) {
+  #services ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+} */

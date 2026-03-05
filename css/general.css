@@ -20,10 +20,14 @@ body {
 
 button {
     border: none;
+}
+
+button:hover, button:active {
     cursor: pointer;
 }
 
 a {
+    text-decoration: none;
     color: var(--lch-brand-red);
     font-weight: 600;
 }
@@ -67,12 +71,11 @@ ul {
     padding: 0;
 }
 
-figure {
-    margin: 0;
-    padding: 2rem 1rem;
+article {
+    margin-top: 3rem;
+    border-top: 1px solid var(--lch-light-grey);
 }
 
-hr {
-    border: none;
-    border-top: 1px solid var(--lch-light-grey);
+figure {
+    margin: 1.5rem 0;
 }
