@@ -13,6 +13,7 @@
     padding: 2rem;
     background: var(--lch-white);
     transition: transform 0.5s ease-in-out, opacity 0.5s;
+    border-radius: 0.75rem;
 }
 
 .warning.dismiss {
