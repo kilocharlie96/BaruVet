@@ -1,12 +1,36 @@
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100vw);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100vw);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 header {
     display: flex;
     justify-content: end;
 
     height: 92vh;
     width: 100%;
+
     background-image: url('../assets/images/bg_header.webp');
-    background-size: cover;
+    background-attachment: fixed; 
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
     text-shadow: 0 0.05rem 0.2rem var(--lch-vanilla);
 }
@@ -24,11 +48,17 @@ header {
     background: rgba(255, 255, 255, 0.5);
 }
 
+.header-container h1 {
+    animation: slideInLeft 1s ease-out forwards;
+}
+
 .header-container h2 {
     padding: 1.5rem;
 
     text-wrap: balance;
     text-align: left;
+
+    animation: slideInRight 1s ease-out forwards;
 }
 
 .header-container a {
@@ -36,6 +66,8 @@ header {
     text-decoration: none;
     margin-bottom: 2rem;
     padding: 1rem;
+
+    animation: slideInLeft 1s ease-out forwards;
 }
 
 
