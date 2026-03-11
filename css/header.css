@@ -24,7 +24,7 @@ header {
     display: flex;
     justify-content: end;
 
-    height: 92vh;
+    height: 92dvh;
     width: 100%;
 
     background-image: url('../assets/images/bg_header.webp');
