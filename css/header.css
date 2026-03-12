@@ -24,12 +24,15 @@ header {
     display: flex;
     justify-content: end;
 
+    /* Fallback + stable viewport sizing on mobile */
+    height: 92vh;
     height: 92svh;
     width: 100%;
 
     background-image: url('../assets/images/bg_header.webp');
     background-size: cover;
-    background-attachment: fixed;
+    /* Mobile browsers are janky/unsupported with `fixed` */
+    background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
     text-shadow: 0 0.05rem 0.2rem var(--lch-vanilla);
@@ -73,6 +76,10 @@ header {
 
 /* DESKTOP */
 @media (min-width: 660px) {
+    header {
+        background-attachment: fixed;
+    }
+
     .header-container {
         justify-content: center;
         align-items: start;
