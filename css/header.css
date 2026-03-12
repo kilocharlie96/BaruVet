@@ -29,13 +29,33 @@ header {
     height: 92svh;
     width: 100%;
 
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+
+    text-shadow: 0 0.05rem 0.2rem var(--lch-vanilla);
+}
+
+header::before {
+    content: "";
+
+    /* Mobile-safe "fixed background" layer */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 92vh;
+    height: 92svh;
+
     background-image: url('../assets/images/bg_header.webp');
     background-size: cover;
-    /* Mobile browsers are janky/unsupported with `fixed` */
-    background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
-    text-shadow: 0 0.05rem 0.2rem var(--lch-vanilla);
+
+    transform: translateZ(0);
+    will-change: transform;
+
+    z-index: -1;
 }
 
 .header-container {
@@ -76,10 +96,6 @@ header {
 
 /* DESKTOP */
 @media (min-width: 660px) {
-    header {
-        background-attachment: fixed;
-    }
-
     .header-container {
         justify-content: center;
         align-items: start;
