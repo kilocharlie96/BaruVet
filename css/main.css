@@ -88,14 +88,47 @@ main h2 {
   font-size: 85%;
 }
 
-.member h4 {
-  text-align: left;
-  font-weight: 450;
+.dropdown-header {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  color: var(--lch-brand-red);
+  cursor: pointer; /* Aby užívateľ vedel, že celá hlavička je klikateľná */
+}
+
+.dropdown-btn {
+  background: none;
+  border: none; /* Odstráni predvolené okraje tlačidla */
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Štýl pre šípku */
+.dropdown-header span {
+  display: inline-block; /* Nutné pre funkčnú rotáciu */
+  margin-left: 10px;
+  transition: transform 0.3s ease; /* Plynulý pohyb */
+  user-select: none;
+}
+
+/* Trieda, ktorú pridáme cez JS */
+.dropdown-header.active span {
+  transform: rotate(90deg);
 }
 
 ol {
   list-style: none;
   padding: 0;
+}
+
+.workshops {
+  display: none;
+}
+
+ol.workshops.show {
+  display: block;
 }
 
 .workshops li {
