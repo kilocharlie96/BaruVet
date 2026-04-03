@@ -55,7 +55,16 @@ main h2 {
 }
 
 .member {
-  margin: 3rem;
+  margin: 3rem 0; /* Margin len hore a dole, boky sú 0 */
+}
+
+/* Pridaj margin bokom len konkrétnym prvkom vo vnútri */
+.member h3, 
+.member .profile-picture, 
+.member .position, 
+.member .about {
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .member h3 {
@@ -63,7 +72,7 @@ main h2 {
 }
 
 .profile-picture {
-  width: 80%;
+  width: 50%;
   border-radius: 50%;
   margin-bottom: 1rem;
 }
@@ -83,9 +92,11 @@ main h2 {
 .dropdown-header {
   display: flex;
   align-items: center;
-  margin-top: 2rem;
+  justify-content: space-evenly;
+  margin: 2rem auto;
   color: var(--lch-brand-red);
   cursor: pointer;
+  max-width: 20rem;
 }
 
 .dropdown-btn {
@@ -100,7 +111,6 @@ main h2 {
 
 .dropdown-header span {
   display: inline-block;
-  margin-left: 10px;
   transition: transform 0.3s ease;
   user-select: none;
 }
