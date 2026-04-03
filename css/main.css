@@ -62,7 +62,8 @@ main h2 {
 .member h3, 
 .member .profile-picture, 
 .member .position, 
-.member .about {
+.member .about,
+.member .workshops {
   margin-left: 3rem;
   margin-right: 3rem;
 }
