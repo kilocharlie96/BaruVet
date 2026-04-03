@@ -107,7 +107,6 @@ main h2 {
   color: inherit;
   cursor: pointer;
   padding: 0;
-  text-decoration: underline;
 }
 
 .dropdown-header span {
