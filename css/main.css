@@ -239,9 +239,3 @@ iframe {
   margin-bottom: 1rem;
   padding: 0.25rem;
 }
-
-@media (min-width: 526px) {
-  .navigate {
-    display: none;
-  }
-}
