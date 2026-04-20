@@ -18,7 +18,10 @@
 
 .warning-header {
     font-size: 1.25rem;
-    margin-bottom: 1rem;
+}
+
+.warning-header p:first-child {
+  font-size: 1.75rem;
 }
 
 .warning.dismiss {
