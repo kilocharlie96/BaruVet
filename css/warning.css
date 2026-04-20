@@ -16,6 +16,11 @@
     border-radius: 0.75rem;
 }
 
+.warning-header {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
 .warning.dismiss {
     opacity: 0;
     visibility: hidden;
