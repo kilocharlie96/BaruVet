@@ -18,10 +18,6 @@ body {
   scroll-margin-top: 5rem;
 }
 
-button {
-    border: none;
-    cursor: pointer;
-}
 
 hr {
     border: 0;
@@ -31,6 +27,15 @@ hr {
 a {
     color: var(--lch-brand-red);
     font-weight: 600;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+a, button.dropdown-btn {
+    text-decoration: 1px solid underline var(--lch-brand-red-transparent);
 }
 
 a:hover, a:active {

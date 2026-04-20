@@ -4,7 +4,6 @@ main article {
 }
 
 #services {
-  border-top: none;
   padding: 0 2rem;
   max-width: 520px;
 }
@@ -16,30 +15,23 @@ main h2 {
 .services-item {
   display: flex;
   align-items: center;
-
   min-height: 16vh;
-
   margin-top: 1rem;
-
   background-image: 
     linear-gradient( 
       to right,
       var(--lch-white),
       var(--lch-light-grey)
     );
-
     border-radius: 0.75rem;
 }
 
 .services-item a {
   display: flex;
   align-items: center;
-  
   min-height: 7rem;
-
   padding-right: 1rem;
   padding-left: 2rem;
-
   font-size: 1rem;
   text-decoration: none;
 }
@@ -51,10 +43,8 @@ main h2 {
 
 .services-item p {
   flex: 6;
-  
   margin: 0;
   padding-left: 2rem;
-
   text-align: left;
   font-size: clamp(1.3rem, 1.5vw, 3rem);
 }
@@ -64,7 +54,17 @@ main h2 {
 }
 
 .member {
-  margin: 3rem;
+  margin: 3rem 0; /* Margin len hore a dole, boky sú 0 */
+}
+
+/* Pridaj margin bokom len konkrétnym prvkom vo vnútri */
+.member h3, 
+.member .profile-picture, 
+.member .position, 
+.member .about,
+.member .workshops {
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .member h3 {
@@ -72,9 +72,8 @@ main h2 {
 }
 
 .profile-picture {
-  width: 80%;
-  border-radius: 10%;
-
+  width: 50%;
+  border-radius: 50%;
   margin-bottom: 1rem;
 }
 
@@ -88,18 +87,61 @@ main h2 {
   font-size: 85%;
 }
 
-.member h4 {
-  text-align: left;
-  font-weight: 450;
+/* --- DROPDOWN SEKICA --- */
+
+.dropdown-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 2rem auto;
+  color: var(--lch-brand-red);
+  cursor: pointer;
+  max-width: 20rem;
 }
 
-ol {
-  list-style: none;
+.dropdown-btn {
+  background: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
   padding: 0;
+}
+
+.dropdown-header span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  user-select: none;
+}
+
+.dropdown-header.active span {
+  transform: rotate(90deg);
+}
+
+/* Kľúčová oprava: Kontajner musí mať striktne skrytý overflow */
+.dropdown-content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.4s ease-out, visibility 0.4s;
+  overflow: hidden;
+  visibility: hidden; /* Zabezpečí, že skrytý text nepresvitá */
+}
+
+.dropdown-content.show {
+  grid-template-rows: 1fr;
+  visibility: visible;
+}
+
+.workshops {
+  min-height: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .workshops li {
   margin-bottom: 2rem;
+  padding-top: 1rem; /* Pridaný padding namiesto marginu na vrchu pre hladší štart */
 }
 
 .workshops div {
@@ -117,9 +159,10 @@ ol {
   text-align: left;
   padding-left: 1rem;
   font-size: 80%;
-
   margin-top: 0.45rem;
 }
+
+/* --- KONIEC DROPDOWN SEKCIU --- */
 
 #team hr {
   width: 80%;
@@ -129,7 +172,6 @@ ol {
   width: 95%;
   border-collapse: collapse;
   margin: auto;
-
   font-family: "Montserrat", sans-serif;
   color: #444;
   font-size: 0.9rem;
@@ -166,12 +208,10 @@ table.office-hours tr td, thead {
   display: grid;
   place-content: center;
   grid-template-columns: 1fr 3fr;
-
   width: fit-content;
   margin: auto;
   padding: 0.6rem;
   border-radius: 1rem;
-  
   background: var(--lch-brand-red);
   text-decoration: none;
   color: var(--lch-white);
@@ -197,10 +237,4 @@ iframe {
   display: block;
   margin-bottom: 1rem;
   padding: 0.25rem;
-}
-
-@media (min-width: 526px) {
-  .navigate {
-    display: none;
-  }
 }

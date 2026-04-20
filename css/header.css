@@ -1,4 +1,4 @@
-@keyframes slideInLeft {
+/* @keyframes slideInLeft {
     from {
         transform: translateX(-100vw);
         opacity: 0;
@@ -18,7 +18,7 @@
         transform: translateX(0);
         opacity: 1;
     }
-}
+} */
 
 header {
     display: flex;
@@ -63,7 +63,6 @@ header {
 
 .header-container a {
     width: 100%;
-    text-decoration: none;
     margin-bottom: 2rem;
     padding: 1rem;
 
