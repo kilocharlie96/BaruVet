@@ -1,55 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>BaruVet | Veterinárna ambulancia Komjatice</title>
 
-    <meta name="description" content="Hľadáte pre svojho miláčika odbornú starostlivosť a ľudský prístup? V BaruVet Komjatice sa postaráme o zdravie vášho člena rodiny - od prevencie až po diagnostiku.">
-    <meta property="og:title" content="Veterinárna ambulancia - BaruVet">
-    <meta property="og:description" content="Váš domáci miláčik si zaslúži tú najlepšiu starostlivosť. V moderne vybavenej ambulancii BaruVet v Komjaticiach pristupujeme ku každému pacientovi trpezlivo a odborne. Sme tu pre vás, keď nás potrebujete.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://baruvet.sk/">
-    <meta name="google-site-verification" content="m2QabKpdGcof_GZIKIq7RpXUX0_OhALhO2t2kQBOIH4" />
+    <meta
+      name="description"
+      content="Hľadáte pre svojho miláčika odbornú starostlivosť a ľudský prístup? V BaruVet Komjatice sa postaráme o zdravie vášho člena rodiny - od prevencie až po diagnostiku."
+    />
+    <meta property="og:title" content="Veterinárna ambulancia - BaruVet" />
+    <meta
+      property="og:description"
+      content="Váš domáci miláčik si zaslúži tú najlepšiu starostlivosť. V moderne vybavenej ambulancii BaruVet v Komjaticiach pristupujeme ku každému pacientovi trpezlivo a odborne. Sme tu pre vás, keď nás potrebujete."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://baruvet.sk/" />
+    <meta
+      name="google-site-verification"
+      content="m2QabKpdGcof_GZIKIq7RpXUX0_OhALhO2t2kQBOIH4"
+    />
 
-    <link rel="canonical" href="https://baruvet.sk/">
+    <link rel="canonical" href="https://baruvet.sk/" />
 
-    <link rel="icon" type="image/png" href="assets/logo/favicon-96x96.png">
+    <link rel="icon" type="image/png" href="assets/logo/favicon-96x96.png" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="css/modern-normalize.css">
-    <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/pricelist.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/modern-normalize.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/warning.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/pricelist.css" />
+    <link rel="stylesheet" href="css/footer.css" />
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.8/dist/htmx.js" 
-    integrity="sha384-ezjq8118wdwdRMj+nX4bevEi+cDLTbhLAeFF688VK8tPDGeLUe0WoY2MZtSla72F" 
-    crossorigin="anonymous">
-    </script>
-</head>
+    <script
+      src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.8/dist/htmx.js"
+      integrity="sha384-ezjq8118wdwdRMj+nX4bevEi+cDLTbhLAeFF688VK8tPDGeLUe0WoY2MZtSla72F"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <div class="app">
-        <div id="navbar" class="navbar" hx-get="components/navbar.html" hx-trigger="load"></div>
-        <header hx-get="components/header.html" hx-trigger="load"></header>
-        <main hx-get="components/main.html" hx-trigger="load"></main>
-        <footer hx-get="components/footer.html" hx-trigger="load"></footer>
+      <div class="warning">
+        <div class="warning-content">
+          <div class="warning-header">
+            <p><strong>Vážení klienti,</strong></p>
+            <p>
+              <strong>v sobotu (25.6.) bude naša ambulancia zatvorená.</strong>
+            </p>
+          </div>
+          <button class="btn-agree" type="button">Rozumiem</button>
+        </div>
+      </div>
+      <div
+        id="navbar"
+        class="navbar"
+        hx-get="components/navbar.html"
+        hx-trigger="load"
+      ></div>
+      <header hx-get="components/header.html" hx-trigger="load"></header>
+      <main hx-get="components/main.html" hx-trigger="load"></main>
+      <footer hx-get="components/footer.html" hx-trigger="load"></footer>
     </div>
 
-    <!-- <script src="js/closeWarning.js"></script> -->
+    <script src="js/closeWarning.js"></script>
     <script src="js/hamburgerToggle.js"></script>
     <script src="js/menuToggle.js"></script>
     <script src="js/navbarResize.js"></script>
     <script src="js/toggleWorkshops.js"></script>
-</body>
+  </body>
 </html>
