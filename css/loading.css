@@ -5,25 +5,22 @@
   place-items: center;
 }
 
-/* Základný prechod pre všetky prsty */
 .toe {
   transition: opacity 0.2s ease-in-out;
   animation: hideToe 1.6s infinite; /* 4 kroky x 0.4s = 1.6s celkový cyklus */
 }
 
-/* Definovanie kľúčových snímok pre skývanie (opacity 0) */
 @keyframes hideToe {
   0%,
   24.99% {
     opacity: 0;
-  } /* Prst je skrytý */
+  }
   25%,
   100% {
     opacity: 1;
-  } /* Prst je viditeľný */
+  }
 }
 
-/* Fázový posun pre jednotlivé prsty */
 .toe-1 {
   animation-delay: 0s;
 }
